@@ -381,7 +381,6 @@ footer {
   }
 }
 
-
 .galeria {
   display: grid;
   gap: 10px;
@@ -494,7 +493,8 @@ body.comunidad {
   gap: 20px;
 }
 
-.welcome-section, .join-section {
+.welcome-section,
+.join-section {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 8px;
