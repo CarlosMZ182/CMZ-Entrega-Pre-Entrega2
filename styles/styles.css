@@ -18,13 +18,38 @@ header img {
   height: auto; /* Mantiene la proporción de la imagen */
 }
 
+/* Gradiente para el menu de navegacion  */
+
 .custom-nav {
-  background-color: #325aab !important; /* Color de fondo del nav personalizado */
+  background-color: #325aab;
+  background-image: linear-gradient(147deg, #325aab 0%, #32ab82 74%);
 }
 
+/* Efecto de luz en el texto al pasar el cursor */
 .custom-text {
-  font-weight: bold; /* Texto en negrita */
+  position: relative;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
+
+.custom-text:hover {
+  color: #ffffff; /* Asegúrate de que el texto permanezca visible */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+               0 0 20px rgba(255, 255, 255, 0.6), 
+               0 0 30px rgba(255, 255, 255, 0.4); /* Efecto de luz */
+}
+
+.custom-logo {
+  transition: transform 0.5s ease, text-shadow 0.5s ease;
+}
+
+.custom-logo:hover {
+  transform: scale(1.1) rotate(5deg); /* Aumenta ligeramente el tamaño y gira el logo */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+               0 0 20px rgba(255, 255, 255, 0.6), 
+               0 0 30px rgba(255, 255, 255, 0.4); /* Aplica el mismo brillo que a los enlaces */
+}
+
+
 
 /* Estilos para el título principal */
 .titulo-principal {
@@ -49,41 +74,17 @@ a {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-/* Estilos para el div de banner */
-.banner {
-  position: relative; /* Posicionamiento relativo */
-  width: 80%; /* Ancho del banner */
-  max-width: 1500px; /* Ancho máximo del banner */
-  margin: 20px auto; /* Centra el banner con márgenes superior e inferior */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra del banner */
-  padding: 0; /* Sin padding */
-  border-radius: 20px; /* Bordes redondeados */
+/* Estilos para el tamaño de las imagenes del banner y el borde redondo */
+
+#carouselExampleFade img {
+  max-height: 650px; /* Ajusta esta altura según tus necesidades */
+  border-radius: 15px; /* Puedes ajustar este valor para más o menos redondez */
 }
 
-.banner img {
-  border-radius: 20px; /* Bordes redondeados de la imagen */
-  width: 100%; /* La imagen ocupa todo el ancho del banner */
-  height: auto; /* Mantiene la proporción de la imagen */
-  display: block; /* Elimina el espacio en blanco debajo de la imagen */
-}
 
-/* Ajustes de padding para el banner en vistas pequeñas */
-@media (max-width: 768px) {
-  .banner {
-    width: 90%; /* Ancho del banner en pantallas pequeñas */
-  }
-}
-
-@media (max-width: 480px) {
-  .banner {
-    width: 95%; /* Ancho del banner en pantallas muy pequeñas */
-  }
-}
-
-/* Estilos para la sección principal */
 .main-seccion {
   padding: 20px;
-  text-align: center; /* Centra el texto dentro de la sección principal */
+  text-align: center; /* Puedes mantener este estilo si deseas centrar el texto */
 }
 
 /* Estilos para la sección de historias */
@@ -92,41 +93,34 @@ a {
   margin-top: 20px;
 }
 
-.story-grid {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas grandes */
-  gap: 20px; /* Espacio entre los elementos */
+/* Opcional: Adaptar el tamaño de las imágenes */
+.card-img-top {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: 200px; /* Ajusta la altura fija que desees */
 }
 
-.story-item {
-  background: whitesmoke; /* Fondo de los elementos */
-  margin: 20px 0;
-  border: 1px solid #ddd; /* Borde para visualización */
-  border-radius: 10px; /* Bordes redondeados */
-  padding: 20px; /* Espaciado interno */
-  text-align: center; /* Centra el texto */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del elemento */
+
+/* Puedes ajustar la sombra y el borde de las tarjetas si deseas */
+.card {
+  border: 1px solid #ddd; /* Borde opcional */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
 }
 
-.story-img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
-  border-radius: 10px; /* Bordes redondeados */
-}
-
-.story-item h2 {
+/* Opcional: Ajustar el tamaño del texto dentro de las tarjetas */
+.card-title {
   font-size: 1.5em;
-  margin: 20px 0 30px; /* Margen superior, entre y debajo del h2 */
+  margin-bottom: 20px; /* Ajuste del margen inferior del título */
 }
 
-.story-item p {
+.card-text {
   font-size: 1.2em;
   line-height: 1.6; /* Altura de línea */
-  text-align: justify; /* Justifica el texto */
-  margin: 10px 0; /* Margen superior e inferior del párrafo */
+  text-align: justify; /* Justificar el texto si deseas mantener este estilo */
 }
+
+
+
+/* Estilos para la sección principal */
 
 /* Ajustes responsivos */
 @media (max-width: 768px) {
@@ -161,32 +155,34 @@ a {
   }
 }
 
-/* Estilos para la sección de videos de gameplay */
+/* Estilos personalizados para la sección de videos de gameplay */
 .gameplay-video {
   margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centra los elementos horizontalmente */
-  padding: 20px;
-  text-align: center;
 }
 
 .gameplay-video h2 {
-  margin-bottom: 15px; /* Espacio entre el título y el párrafo */
   font-size: 36px; /* Tamaño de fuente para pantallas grandes */
 }
 
 .gameplay-video p {
-  margin-bottom: 30px; /* Espacio entre el párrafo y el video */
   font-size: 18px; /* Tamaño de fuente para pantallas grandes */
   max-width: 900px; /* Ancho máximo del párrafo */
+  margin: 0 auto; /* Centra el párrafo en su contenedor */
 }
 
-.gameplay-video iframe {
-  width: 100%;
+.video-wrapper {
+  border-radius: 15px; /* Redondea los bordes del contenedor */
+  overflow: hidden; /* Asegura que el iframe no se salga del contenedor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra para resaltar el contenedor */
   max-width: 800px; /* Tamaño máximo del video en pantallas grandes */
+  margin: 0 auto; /* Centra el contenedor del video */
+}
+
+.video-wrapper iframe {
+  width: 100%;
   height: auto;
   aspect-ratio: 16 / 9; /* Mantiene la proporción del video */
+  border: none; /* Elimina el borde predeterminado del iframe */
 }
 
 /* Ajustes adicionales para pantallas más grandes */
@@ -200,47 +196,68 @@ a {
   }
 }
 
+
+
 /* Estilos para el footer */
 footer {
-  display: flex; /* Usa Flexbox para el layout del footer */
-  flex-direction: column; /* Coloca los elementos en una columna */
-  align-items: center; /* Centra los elementos horizontalmente */
-  justify-content: center; /* Centra los elementos verticalmente (opcional) */
-  background-color: #325aab; /* Color de fondo del footer */
-  padding: 20px; /* Espaciado interno del footer */
-  text-align: center; /* Centra el texto y los elementos en el footer */
-  border-top: 1px solid #ddd; /* Línea superior sutil para separar el footer del contenido */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(147deg, #325aab 0%, #32ab82 74%); /* Gradiente de fondo */
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
 }
 
 .footer-logo {
-  width: 80px; /* Tamaño reducido del logo */
-  height: auto; /* Mantiene la proporción del logo */
-  margin-bottom: 15px; /* Espacio debajo del logo */
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+  /* Sin brillo por defecto */
+}
+
+.footer-logo:hover {
+  /* Efecto de brillo al pasar el cursor */
+  filter: drop-shadow(0 0 10px #fff);
 }
 
 .footer-text {
-  margin: 10px 0; /* Espacio arriba y abajo del texto */
-  color: whitesmoke; /* Color del texto */
-  font-size: 1.3em; /* Tamaño de la fuente del texto */
+  margin: 10px 0;
+  color: whitesmoke;
+  font-size: 1.3em;
+  /* Sin brillo por defecto */
+}
+
+.footer-text:hover {
+  /* Efecto de brillo al pasar el cursor */
+  text-shadow: 0 0 5px #fff;
 }
 
 .iconos-redes {
-  display: flex; /* Usa Flexbox para alinear los íconos sociales */
-  justify-content: center; /* Centra los íconos horizontalmente */
-  margin-top: 15px; /* Espacio arriba de los íconos de redes sociales */
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
 }
 
 .social-icon {
-  width: 100px; /* Tamaño de los íconos sociales */
-  height: auto; /* Mantiene la proporción de los íconos */
-  margin: 0 15px; /* Espacio entre los íconos */
+  width: 100px;
+  height: auto;
+  margin: 0 15px;
+  /* Sin brillo por defecto */
+}
+
+.social-icon:hover {
+  /* Efecto de brillo al pasar el cursor */
+  filter: drop-shadow(0 0 5px #fff);
 }
 
 @media (max-width: 768px) {
   .social-icon {
-    width: 70px; /* Ajuste del tamaño de los íconos en pantallas pequeñas */
+    width: 70px;
   }
 }
+
 
 /* Estilos para la sección de personajes */
 .personajes {

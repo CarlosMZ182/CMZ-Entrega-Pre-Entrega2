@@ -20,6 +20,10 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Wiki Super Mario World!</title>
   </head>
@@ -28,10 +32,14 @@
     <!-- inicio del Header -->
 
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-secondary custom-nav">
-        <img src="./images/logos/logo2.png" alt="Logo" class="logo-nav" />
+      <nav class="navbar navbar-expand-lg custom-nav">
+        <img
+          src="./images/logos/logo2.png"
+          alt="Logo"
+          class="logo-nav custom-logo"
+        />
         <div class="container-fluid">
-          <a class="navbar-brand text-white" href="#">Fans Page</a>
+          <a class="navbar-brand text-white custom-text" href="#">Fans Page</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -74,111 +82,179 @@
       </nav>
     </header>
 
-    <h1 class="titulo-principal">FansPage Super Mario World</h1>
+    <h1 class="titulo-principal animate__animated animate__fadeIn">
+      FansPage Super Mario World
+    </h1>
 
     <!-- Baner con imagenes interactivas o animaciones -->
 
-    <div class="banner">
-      <img src="./images/slide/slide3.jpg" alt="Imagen de slide" />
-      <!-- <img src="./images/slide/slide2.png" alt="Imagen de slide" />
-      <img src="./images/slide/slide1.jpg" alt="Imagen de slide" /> -->
+    <div
+      id="carouselExampleFade"
+      class="carousel slide carousel-fade w-75 mx-auto"
+      data-bs-ride="carousel"
+      data-bs-interval="4000"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/images/banner/banner01.jpg"
+            class="d-block w-100"
+            alt="imagen-banner"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/images/banner/banner02.jpg"
+            class="d-block w-100"
+            alt="imagen-banner"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/images/banner/banner03.jpg"
+            class="d-block w-100"
+            alt="imagen-banner"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
     <!-- Seccion principal del index  -->
     <main class="main-seccion">
       <section class="story-section">
-        <div class="story-grid">
-          <div class="story-item">
-            <img
-              src="./images/seccion/item6.jpg"
-              alt="Capítulo 1"
-              class="story-img"
-            />
-            <h2>Introducción a Super Mario World</h2>
-            <p>
-              Super Mario World es un videojuego de plataformas lanzado para la
-              Super Nintendo Entertainment System (SNES) en 1990. Es la cuarta
-              entrega de la serie principal de Mario y presenta a Mario en una
-              nueva aventura en Dinosaur Land, donde debe salvar a la Princesa
-              Peach y enfrentar a Bowser.
-            </p>
-          </div>
-          <div class="story-item">
-            <img
-              src="./images/seccion/item1.jpg"
-              alt="Capítulo 2"
-              class="story-img"
-            />
-            <h2>La Historia del Juego</h2>
-            <p>
-              La historia de Super Mario World sigue a Mario mientras viaja por
-              Dinosaur Land para rescatar a la Princesa Peach del malvado
-              Bowser. Con la ayuda de Yoshi, un dinosaurio amigable, Mario
-              explora un vasto mundo lleno de niveles desafiantes, enemigos y
-              secretos ocultos.
-            </p>
-          </div>
-          <div class="story-item">
-            <img
-              src="./images/seccion/item4.jpg"
-              alt="Capítulo 3"
-              class="story-img"
-            />
-            <h2>Personajes Principales</h2>
-            <p>
-              Los personajes principales en Super Mario World incluyen a Mario,
-              Luigi, la Princesa Peach y Bowser. Mario y Luigi son los héroes
-              jugables que deben enfrentarse a Bowser, el villano principal,
-              mientras que Yoshi, el dinosaurio verde, se une a la aventura para
-              ayudarles.
-            </p>
-          </div>
+        <div class="container">
+          <div class="row">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  src="./images/seccion/seccion01.jpg"
+                  class="card-img-top"
+                  alt="Capítulo 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Introducción a Super Mario World</h5>
+                  <p class="card-text">
+                    Super Mario World es un videojuego de plataformas lanzado
+                    para la Super Nintendo Entertainment System (SNES) en 1990.
+                    Es la cuarta entrega de la serie principal de Mario...
+                  </p>
+                </div>
+              </div>
+            </div>
 
-          <div class="story-item">
-            <img
-              src="./images/seccion/item5.jpg"
-              alt="Capítulo 1"
-              class="story-img"
-            />
-            <h2>Nuevas Habilidades y Power-Ups</h2>
-            <p>
-              Super Mario World introduce varios power-ups nuevos, incluyendo la
-              capa de vuelo que permite a Mario planear y volar, y el caparazón
-              de Yoshi que otorga habilidades especiales al dinosaurio. Estos
-              power-ups amplían las posibilidades de exploración y estrategia en
-              el juego.
-            </p>
-          </div>
-          <div class="story-item">
-            <img
-              src="./images/seccion/item2.jpg"
-              alt="Capítulo 2"
-              class="story-img"
-            />
-            <h2>Mundo y Niveles</h2>
-            <p>
-              El juego presenta un extenso mapa de Dinosaur Land, dividido en
-              varios niveles temáticos y mundos. Cada mundo ofrece una variedad
-              de desafíos y secretos, desde niveles en el bosque hasta mundos
-              subterráneos y castillos. Los jugadores deben superar obstáculos y
-              enemigos para avanzar en la historia.
-            </p>
-          </div>
-          <div class="story-item">
-            <img
-              src="./images/seccion/item3.jpg"
-              alt="Capítulo 3"
-              class="story-img"
-            />
-            <h2>Impacto y Legado</h2>
-            <p>
-              Super Mario World es considerado uno de los mejores videojuegos de
-              todos los tiempos y ha tenido un impacto duradero en la industria
-              de los videojuegos. Su innovador diseño de niveles, la
-              introducción de Yoshi y su jugabilidad adictiva han influenciado a
-              muchos juegos posteriores y siguen siendo apreciados por los
-              fanáticos de todas las edades.
-            </p>
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  src="./images/seccion/seccion02.jpg"
+                  class="card-img-top"
+                  alt="Capítulo 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">La Historia del Juego</h5>
+                  <p class="card-text">
+                    La historia de Super Mario World sigue a Mario mientras
+                    viaja por Dinosaur Land para rescatar a la Princesa Peach
+                    del malvado Bowser...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  src="./images/seccion/seccion03.jpg"
+                  class="card-img-top"
+                  alt="Capítulo 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Personajes Principales</h5>
+                  <p class="card-text">
+                    Los personajes principales en Super Mario World incluyen a
+                    Mario, Luigi, la Princesa Peach y Bowser. Mario y Luigi son
+                    los héroes jugables que deben enfrentarse a Bowser...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  src="./images/seccion/seccion04.jpg"
+                  class="card-img-top"
+                  alt="Capítulo 4"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Nuevas Habilidades y Power-Ups</h5>
+                  <p class="card-text">
+                    Super Mario World introduce varios power-ups nuevos,
+                    incluyendo la capa de vuelo que permite a Mario planear y
+                    volar...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  src="./images/seccion/seccion05.jpg"
+                  class="card-img-top"
+                  alt="Capítulo 5"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Mundo y Niveles</h5>
+                  <p class="card-text">
+                    El juego presenta un extenso mapa de Dinosaur Land, dividido
+                    en varios niveles temáticos y mundos. Cada mundo ofrece una
+                    variedad de desafíos y secretos...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  src="./images/seccion/seccion06.jpg"
+                  class="card-img-top"
+                  alt="Capítulo 6"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Impacto y Legado</h5>
+                  <p class="card-text">
+                    Super Mario World es considerado uno de los mejores
+                    videojuegos de todos los tiempos y ha tenido un impacto
+                    duradero en la industria de los videojuegos...
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -186,55 +262,58 @@
 
     <!-- Seccion del trailer del juego -->
 
-    <section class="gameplay-video">
-      <h2>Echa un vistazo al trailer</h2>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/-WpgCFSLtLo?si=v-C6lc8yGeIS2wo4"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+    <section class="gameplay-video container text-center py-5">
+      <h2 class="mb-4">Echa un vistazo al trailer</h2>
+      <p class="mb-4">Aquí tienes el trailer del juego. ¡No te lo pierdas!</p>
+      <div class="video-wrapper">
+        <iframe
+          class="img-fluid"
+          src="https://www.youtube.com/embed/-WpgCFSLtLo?si=v-C6lc8yGeIS2wo4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
     </section>
+    
+    
 
     <!-- Comienzo del footer -->
 
-    <footer>
-      <img
-        src="./images/logos/footer.png"
-        alt="Logo de Mario"
-        class="footer-logo"
-      />
-      <p class="footer-text">Fans page oficial</p>
-      <p class="footer-text">@ 2024 LofiCompany</p>
-      <p class="footer-text">Diseñado por CMZ</p>
-      <div class="iconos-redes">
-        <a href="https://www.facebook.com" target="_blank">
-          <img
-            src="./images/logos/facebook.png"
-            alt="Facebook"
-            class="social-icon"
-          />
-        </a>
-        <a href="https://www.instagram.com" target="_blank">
-          <img
-            src="./images/logos/instagram.png"
-            alt="Instagram"
-            class="social-icon"
-          />
-        </a>
-        <a href="https://discord.com/" target="_blank">
-          <img
-            src="./images/logos/discord.png"
-            alt="Discord"
-            class="social-icon"
-          />
-        </a>
+    <footer class="bg-primary text-white text-center py-4">
+      <div class="container">
+        <img
+          src="./images/logos/footer.png"
+          alt="Logo de Mario"
+          class="footer-logo mb-3"
+        />
+        <p class="footer-text mb-1">Fans page oficial</p>
+        <p class="footer-text mb-1">@ 2024 LofiCompany</p>
+        <p class="footer-text mb-0">Diseñado por CMZ</p>
+        <div class="iconos-redes">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            class="social-icon me-3"
+          >
+            <img src="./images/logos/facebook.png" alt="Facebook" />
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="social-icon me-3"
+          >
+            <img src="./images/logos/instagram.png" alt="Instagram" />
+          </a>
+          <a href="https://discord.com/" target="_blank" class="social-icon">
+            <img src="./images/logos/discord.png" alt="Discord" />
+          </a>
+        </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
