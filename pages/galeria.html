@@ -20,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../styles/styles.css" />
     <title>Galeria de Imagenes</title>
   </head>
@@ -77,45 +78,212 @@
         </div>
       </nav>
     </header>
+    <h1 class="text-center display-3 my-5" data-aos="fade-up">
+      Explora la Galería del Gameplay de Super Mario World
+    </h1>
+
     <main>
-      <h1 style="text-align: center">Galeria de imagenes</h1>
-      <div class="galeria">
-        <img src="../images/galeria/figthboss1.jpg" alt="" />
-        <img src="../images/galeria/stagebonus1.jpg" alt="" />
-        <img src="../images/galeria/world2.jpg" alt="" />
-        <img src="../images/galeria/stagecastle1.jpg" alt="" />
-        <img src="../images/galeria/stagewater1.jpg" alt="" />
-        <img src="../images/galeria/stagelava1.jpg" alt="" />
-        <img src="../images/galeria/world3.jpg" alt="" />
-        <img src="../images/galeria/stagesky1.jpg" alt="" />
-        <img src="../images/galeria/stagecastle2.jpg" alt="" />
-        <img src="../images/galeria/stagesky2.jpg" alt="" />
-        <img src="../images/galeria/stagewater2.jpg" alt="" />
-        <img src="../images/galeria/stageworld2.jpg" alt="" />
-        <img src="../images/galeria/figthboss1.jpg" alt="" />
-        <img src="../images/galeria/stagebonus1.jpg" alt="" />
-        <img src="../images/galeria/world2.jpg" alt="" />
-        <img src="../images/galeria/stagecastle1.jpg" alt="" />
-        <img src="../images/galeria/stagewater1.jpg" alt="" />
-        <img src="../images/galeria/stagelava1.jpg" alt="" />
-        <img src="../images/galeria/world3.jpg" alt="" />
-        <img src="../images/galeria/stagesky1.jpg" alt="" />
-        <img src="../images/galeria/stagecastle2.jpg" alt="" />
-        <img src="../images/galeria/stagesky2.jpg" alt="" />
-        <img src="../images/galeria/stagewater2.jpg" alt="" />
-        <img src="../images/galeria/stageworld2.jpg" alt="" />
-        <img src="../images/galeria/figthboss1.jpg" alt="" />
-        <img src="../images/galeria/stagebonus1.jpg" alt="" />
-        <img src="../images/galeria/world2.jpg" alt="" />
-        <img src="../images/galeria/stagecastle1.jpg" alt="" />
-        <img src="../images/galeria/stagewater1.jpg" alt="" />
-        <img src="../images/galeria/stagelava1.jpg" alt="" />
-        <img src="../images/galeria/world3.jpg" alt="" />
-        <img src="../images/galeria/stagesky1.jpg" alt="" />
-        <img src="../images/galeria/stagecastle2.jpg" alt="" />
-        <img src="../images/galeria/stagesky2.jpg" alt="" />
-        <img src="../images/galeria/stagewater2.jpg" alt="" />
-        <img src="../images/galeria/stageworld2.jpg" alt="" />
+      <div class="container my-5" data-aos="fade-up">
+        <div class="row">
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/figthboss1.jpg"
+              alt="Imagen 1"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/stagebonus1.jpg"
+              alt="Imagen 2"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/stagecastle1.jpg"
+              alt="Imagen 3"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/stagecastle2.jpg"
+              alt="Imagen 4"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/stagelava1.jpg"
+              alt="Imagen 4"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/stagesky1.jpg"
+              alt="Imagen 4"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/stagesky2.jpg"
+              alt="Imagen 4"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/stagewater1.jpg"
+              alt="Imagen 4"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/stagewater2.jpg"
+              alt="Imagen 4"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/stageworld2.jpg"
+              alt="Imagen 4"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/world1.jpg"
+              alt="Imagen 3"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/world2.jpg"
+              alt="Imagen 3"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/world3.jpg"
+              alt="Imagen 3"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/figthboss1.jpg"
+              alt="Imagen 3"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/secret3.jpg"
+              alt="Imagen 3"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/secret3.jpg"
+              alt="Imagen 3"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/secret3.jpg"
+              alt="Imagen 3"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/secret3.jpg"
+              alt="Imagen 3"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/secret3.jpg"
+              alt="Imagen 3"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/secret3.jpg"
+              alt="Imagen 3"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/secret3.jpg"
+              alt="Imagen 3"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/secret3.jpg"
+              alt="Imagen 3"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/secret3.jpg"
+              alt="Imagen 3"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="col-6 col-md-3 gallery-item" data-aos="fade-up">
+            <img
+              src="../images/galeria/secret3.jpg"
+              alt="Imagen 3"
+              class="img-fluid"
+              onclick="openModal(this)"
+            />
+          </div>
+
+          <!-- Añade más imágenes si es necesario -->
+        </div>
+      </div>
+      <div id="imageModal" onclick="closeModal()">
+        <img id="modalImg" src="" alt="Imagen ampliada" />
       </div>
     </main>
 
@@ -155,5 +323,23 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      function openModal(img) {
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("modalImg");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      }
+
+      function closeModal() {
+        var modal = document.getElementById("imageModal");
+        modal.style.display = "none";
+      }
+    </script>
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

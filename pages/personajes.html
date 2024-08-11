@@ -20,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../styles/styles.css" />
     <title>Personajes</title>
   </head>
@@ -78,171 +79,30 @@
       </nav>
     </header>
 
-    <!-- Seccion para escoger un personaje -->
-
-    <main id="main-personajes" class="personajes">
-      <h1>Personajes de Super Mario World</h1>
-
-      <!-- Contenedor de selección de personajes -->
-      <div class="seleccion-personajes">
-        <a href="#mario"
-          ><img
-            src="../images/personajes/eleccion-mario.jpg"
-            alt="Imagen de Mario"
-        /></a>
-        <a href="#peach"
-          ><img
-            src="../images/personajes/princess1.png"
-            alt="Imagen de Princesa Peach"
-        /></a>
-        <a href="#bowser"
-          ><img src="../images/personajes/bowser1.png" alt="Imagen de Bowser"
-        /></a>
-        <a href="#yoshi"
-          ><img src="../images/personajes/yoshi1.png" alt="Imagen de Yoshi"
-        /></a>
-        <a href="#koopa"
-          ><img src="../images/personajes/koopa1.png" alt="Imagen de Koopa"
-        /></a>
-        <a href="#hammer"
-          ><img
-            src="../images/personajes/kamek1.png"
-            alt="Imagen de Flying Hammer Bros"
-        /></a>
-      </div>
-
-      <!-- Secciones de los personajes -->
-      <div class="detalles-personajes">
-        <section id="mario" class="personaje-detalle">
-          <h2>Mario</h2>
-          <div class="imagenes">
-            <img
-              src="../images/personajes/sprite-mario.png"
-              alt="sprite-mario"
-            />
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2">
+        <div class="col">
+          <div class="card character-card">
+            <img src="/images/personajes/mario1.png" alt="Mario" />
           </div>
-          <p>
-            Descripcion: El icónico héroe de Super Mario World, es un valiente y
-            habilidoso fontanero que se embarca en una emocionante aventura a
-            través de Dinosaur Land para rescatar a la Princesa Peach, quien ha
-            sido secuestrada por el malvado Bowser. Con su clásico traje rojo y
-            gorra distintiva, Mario es conocido por su agilidad y sus poderosos
-            saltos, que utiliza para derrotar a una variedad de enemigos y
-            superar numerosos obstáculos. A lo largo de su travesía, Mario
-            cuenta con la ayuda de su fiel compañero Yoshi, un dinosaurio que
-            puede comer enemigos y ganar habilidades especiales. Juntos,
-            enfrentan desafíos en diversos mundos, desde frondosos bosques hasta
-            traicioneros castillos, demostrando el valor y la determinación de
-            Mario para salvar a la princesa y restaurar la paz en el reino.
-          </p>
-          <div class="habilidades">
-            <h3>Habilidades:</h3>
-            <img
-              src="../images/personajes/sprite-mario3.jpg"
-              alt="sprite-mario2"
-            />
-            <ul>
-              <li>
-                1. Super Mushroom: Mario se convierte en Super Mario, aumentando
-                su tamaño y permitiéndole romper bloques con su cabeza.
-              </li>
-              <li>
-                2. Fire Flower: Transforma a Mario en Fire Mario, dándole la
-                habilidad de lanzar bolas de fuego para derrotar enemigos.
-              </li>
-              <li>
-                3. Cape Feather: Otorga a Mario una capa que le permite volar
-                temporalmente y flotar lentamente hacia el suelo después de
-                saltar.
-              </li>
-              <img
-                src="../images/personajes/sprite-mario2.jpg"
-                alt="sprite-mario"
-              />
-              <li>
-                4. Spin Jump: Permite a Mario romper ciertos bloques y enemigos
-                al girar en el aire.
-              </li>
-              <li>
-                5. Yoshi: Mario puede montar a Yoshi, un dinosaurio que puede
-                comer enemigos, incluyendo algunos que le otorgan habilidades
-                especiales como escupir fuego o volar brevemente.
-              </li>
-              <li>
-                6. Power Balloon: Transforma a Mario en un globo, permitiéndole
-                flotar en el aire por un corto período.
-              </li>
-            </ul>
+        </div>
+        <div class="col">
+          <div class="card character-card">
+            <img src="/images/personajes/princess1.png" alt="Luigi" />
           </div>
-          <a href="#main-personajes">Volver arriba</a>
-        </section>
-
-        <section id="peach" class="personaje-detalle">
-          <h2>Princess Peach</h2>
-          <p>Nombre: Princess Peach</p>
-          <p>
-            Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Atque rem explicabo laborum, iste, illum quaerat, deserunt
-            velit minus unde veritatis mollitia eius ipsum veniam aperiam
-            quisquam adipisci? Laboriosam, natus illo?
-          </p>
-          <p>Habilidades:</p>
-          <a href="#main-personajes">Volver arriba</a>
-        </section>
-
-        <section id="bowser" class="personaje-detalle">
-          <h2>Bowser</h2>
-          <p>Nombre: Bowser</p>
-          <p>
-            Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Atque rem explicabo laborum, iste, illum quaerat, deserunt
-            velit minus unde veritatis mollitia eius ipsum veniam aperiam
-            quisquam adipisci? Laboriosam, natus illo?
-          </p>
-          <p>Habilidades:</p>
-          <a href="#main-personajes">Volver arriba</a>
-        </section>
-
-        <section id="yoshi" class="personaje-detalle">
-          <h2>Yoshi</h2>
-          <p>Nombre: Yoshi</p>
-          <p>
-            Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Atque rem explicabo laborum, iste, illum quaerat, deserunt
-            velit minus unde veritatis mollitia eius ipsum veniam aperiam
-            quisquam adipisci? Laboriosam, natus illo?
-          </p>
-          <p>Habilidades:</p>
-          <a href="#main-personajes">Volver arriba</a>
-        </section>
-
-        <section id="koopa" class="personaje-detalle">
-          <h2>Super Koopa Troopa</h2>
-          <p>Nombre: Super Koopa Troopa</p>
-          <p>
-            Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Atque rem explicabo laborum, iste, illum quaerat, deserunt
-            velit minus unde veritatis mollitia eius ipsum veniam aperiam
-            quisquam adipisci? Laboriosam, natus illo?
-          </p>
-          <p>Habilidades:</p>
-          <a href="#main-personajes">Volver arriba</a>
-        </section>
-
-        <section id="hammer" class="personaje-detalle">
-          <h2>Flying Hammer Bros</h2>
-          <p>Nombre: Flying Hammer Bros</p>
-          <p>
-            Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Atque rem explicabo laborum, iste, illum quaerat, deserunt
-            velit minus unde veritatis mollitia eius ipsum veniam aperiam
-            quisquam adipisci? Laboriosam, natus illo?
-          </p>
-          <p>Habilidades:</p>
-          <a href="#main-personajes">Volver arriba</a>
-        </section>
+        </div>
+        <div class="col">
+          <div class="card character-card">
+            <img src="/images/personajes/yoshi1.png" alt="Peach" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card character-card">
+            <img src="/images/personajes/bowser1.png" alt="Yoshi" />
+          </div>
+        </div>
       </div>
-    </main>
+    </div>
 
     <footer class="bg-primary text-white text-center py-4">
       <div class="container">
@@ -280,5 +140,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

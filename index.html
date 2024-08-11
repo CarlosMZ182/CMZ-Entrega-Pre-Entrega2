@@ -24,6 +24,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Wiki Super Mario World!</title>
   </head>
@@ -82,7 +83,10 @@
       </nav>
     </header>
 
-    <h1 class="titulo-principal animate__animated animate__fadeIn">
+    <h1
+      class="text-center display-4 my-4 animate__animated animate__fadeIn"
+      data-aos="fade-up"
+    >
       FansPage Super Mario World
     </h1>
 
@@ -91,6 +95,7 @@
     <div
       id="carouselExampleFade"
       class="carousel slide carousel-fade w-75 mx-auto"
+      data-aos="fade-up"
       data-bs-ride="carousel"
       data-bs-interval="4000"
     >
@@ -138,12 +143,12 @@
     </div>
 
     <!-- Seccion principal del index  -->
-    <main class="main-seccion">
+    <main class="main-seccion" data-aos="fade-up">
       <section class="story-section">
         <div class="container">
-          <div class="row">
+          <div class="row" data-aos="fade-up">
             <!-- Tarjeta 1 -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" data-aos="fade-up">
               <div class="card">
                 <img
                   src="./images/seccion/seccion01.jpg"
@@ -162,7 +167,7 @@
             </div>
 
             <!-- Tarjeta 2 -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" data-aos="fade-up">
               <div class="card">
                 <img
                   src="./images/seccion/seccion02.jpg"
@@ -181,7 +186,7 @@
             </div>
 
             <!-- Tarjeta 3 -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" data-aos="fade-up">
               <div class="card">
                 <img
                   src="./images/seccion/seccion03.jpg"
@@ -200,7 +205,7 @@
             </div>
 
             <!-- Tarjeta 4 -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" data-aos="fade-up">
               <div class="card">
                 <img
                   src="./images/seccion/seccion04.jpg"
@@ -219,7 +224,7 @@
             </div>
 
             <!-- Tarjeta 5 -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" data-aos="fade-up">
               <div class="card">
                 <img
                   src="./images/seccion/seccion05.jpg"
@@ -238,7 +243,7 @@
             </div>
 
             <!-- Tarjeta 6 -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4" data-aos="fade-up">
               <div class="card">
                 <img
                   src="./images/seccion/seccion06.jpg"
@@ -260,11 +265,89 @@
       </section>
     </main>
 
+    <article class="container my-5" data-aos="fade-up">
+      <h2
+        class="text-center fs-4 my-4 animate__animated animate__fadeIn"
+        data-aos="fade-up"
+      >
+        Descubre los Secretos Ocultos de Super Mario World
+      </h2>
+
+      <section>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card secret-card">
+              <img
+                src="../images/galeria/secret1.jpg"
+                class="card-img-top"
+                alt="Secreto 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Secreto 1</h5>
+                <p class="card-text">
+                  Descripción del primer secreto. Un texto informativo sobre el
+                  secreto mostrado en la imagen.
+                </p>
+                <a href="./pages/secretos.html#secreto1" class="btn btn-primary"
+                  >Ver Más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card secret-card">
+              <img
+                src="../images/galeria/secret2.jpg"
+                class="card-img-top"
+                alt="Secreto 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Secreto 2</h5>
+                <p class="card-text">
+                  Descripción del segundo secreto. Un texto informativo sobre el
+                  secreto mostrado en la imagen.
+                </p>
+                <a href="./pages/secretos.html#secreto2" class="btn btn-primary"
+                  >Ver Más</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card secret-card">
+              <img
+                src="../images/galeria/secret3.jpg"
+                class="card-img-top"
+                alt="Secreto 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Secreto 3</h5>
+                <p class="card-text">
+                  Descripción del tercer secreto. Un texto informativo sobre el
+                  secreto mostrado en la imagen.
+                </p>
+                <a href="/pages/secretos.html#secreto3" class="btn btn-primary"
+                  >Ver Más</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+
     <!-- Seccion del trailer del juego -->
 
-    <section class="gameplay-video container text-center py-5">
-      <h2 class="mb-4">Echa un vistazo al trailer</h2>
-      <p class="mb-4">Aquí tienes el trailer del juego. ¡No te lo pierdas!</p>
+    <section
+      class="gameplay-video container text-center py-5"
+      data-aos="fade-up"
+    >
+      <h2 class="text-center fs-4 my-4 animate__animated animate__fadeIn">
+        Echa un vistazo al trailer
+      </h2>
+      <p class="mb-4 animate__animated animate__fadeIn">
+        Aquí tienes el trailer del juego. ¡No te lo pierdas!
+      </p>
       <div class="video-wrapper">
         <iframe
           class="img-fluid"
@@ -277,8 +360,6 @@
         ></iframe>
       </div>
     </section>
-    
-    
 
     <!-- Comienzo del footer -->
 
@@ -318,5 +399,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
