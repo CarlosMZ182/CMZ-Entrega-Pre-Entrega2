@@ -120,6 +120,26 @@ a {
   text-align: center; /* Puedes mantener este estilo si deseas centrar el texto */
 }
 
+.card {
+  display: flex;
+  flex-direction: column; /* Asegura que el contenido se alinee verticalmente */
+  height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+}
+
+.card-text {
+  text-align: justify;
+}
+
+.card-img-top {
+  width: 100%; /* Ajusta el ancho de la imagen al contenedor de la tarjeta */
+  height: 350px; /* Altura fija para la imagen */
+  object-fit: cover; /* Cubre el área de la tarjeta sin distorsionar la imagen */
+}
+
+.card-body {
+  flex: 1; /* Hace que el cuerpo de la tarjeta se expanda para llenar el espacio restante */
+}
+
 /* Estilos para la sección de historias */
 .story-section {
   padding: 20px;
@@ -273,8 +293,11 @@ body.comunidad {
 }
 
 .parrafo-comunidad {
+  text-align: justify;
+}
+.sub-comunidad {
   text-align: center;
-  justify-content: center;
+  padding: 20px 20px;
 }
 
 .welcome-section,
@@ -321,6 +344,7 @@ body.comunidad {
     justify-content: space-around;
   }
 }
+
 /* Estilos para mostrar la imagen de la galeria en tamaño grande */
 
 .gallery-item img {
@@ -414,4 +438,60 @@ body.comunidad {
 .secret-text {
   font-size: 1rem;
   color: #666;
+  text-align: justify;
+  margin-top: 1rem; /* Espacio encima del texto */
+  margin-bottom: 1rem; /* Espacio debajo del texto */
+}
+
+.character-card {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  width: 100%; /* Ancho completo del contenedor */
+  height: 500px; /* Establece una altura fija para todas las tarjetas */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+  position: relative; /* Para el posicionamiento absoluto de la imagen */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.character-img {
+  position: absolute; /* Posiciona la imagen dentro de la tarjeta */
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  width: 100%; /* Ajusta el ancho al contenedor */
+  height: 100%; /* Ajusta la altura al contenedor */
+  object-fit: contain; /* Ajusta la imagen al contenedor manteniendo la proporción */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Ajusta la imagen al centro del contenedor */
+}
+
+.character-card:hover {
+  transform: scale(
+    1.05
+  ); /* Agranda la tarjeta ligeramente al pasar el cursor */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el cursor */
+}
+
+@media (max-width: 765px) {
+  .character-card {
+    height: 700px; /* Reduce la altura de las tarjetas para vistas móviles */
+    margin: 20px auto; /* Aumenta el margen y centra las tarjetas */
+    max-width: 90%; /* Asegura que las tarjetas no ocupen todo el ancho */
+  }
+
+  .row {
+    justify-content: center; /* Centra las tarjetas dentro de la fila */
+  }
+}
+
+.character-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.2rem; /* Ajusta el tamaño de la fuente según tu preferencia */
 }
