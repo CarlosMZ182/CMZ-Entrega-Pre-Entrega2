@@ -1,0 +1,78 @@
+body {
+  background-color: whitesmoke; /* Color de fondo del cuerpo */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  main {
+    padding: 20px;
+    background-color: whitesmoke; /* Color de fondo de la sección principal */
+  }
+
+  h1,
+  h2,
+  p,
+  a {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  .main-seccion {
+    padding: 20px;
+    text-align: center; /* Puedes mantener este estilo si deseas centrar el texto */
+  }
+
+  .titulo-principal {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 20px 0; /* Margen superior e inferior */
+    font-size: 2.5em; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color del texto */
+  }
+
+  .story-section {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido se alinee verticalmente */
+    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+
+    .card-img-top {
+      width: 100%; /* Ajusta el ancho de la imagen al contenedor de la tarjeta */
+      height: 350px; /* Altura fija para la imagen */
+      object-fit: cover; /* Cubre el área de la tarjeta sin distorsionar la imagen */
+    }
+
+    .card-body {
+      flex: 1; /* Hace que el cuerpo de la tarjeta se expanda para llenar el espacio restante */
+    }
+
+    .card-text {
+      text-align: justify;
+    }
+  }
+
+  #carouselExampleFade img {
+    max-height: 650px; /* Ajusta esta altura según tus necesidades */
+    border-radius: 15px; /* Puedes ajustar este valor para más o menos redondez */
+  }
+}
+
+.character-avatar {
+  width: 100%;
+  height: auto;
+  border-radius: 5%; /* Hace las imágenes circulares, como avatares */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el cursor */
+}
+.character-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.character-name {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #333;
+}
