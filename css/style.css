@@ -1,27 +1,30 @@
 @charset "UTF-8";
 body {
-  background-color: whitesmoke; /* Color de fondo del cuerpo */
+  background-color: whitesmoke;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 body main {
   padding: 20px;
-  background-color: whitesmoke; /* Color de fondo de la sección principal */
+  background-color: whitesmoke;
 }
-body h1, body h2, body p, body a {
+body h1,
+body h2,
+body p,
+body a {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 body .main-seccion {
   padding: 20px;
-  text-align: center; /* Puedes mantener este estilo si deseas centrar el texto */
+  text-align: center;
 }
 body .titulo-principal {
-  text-align: center; /* Centra el texto horizontalmente */
-  margin: 20px 0; /* Margen superior e inferior */
-  font-size: 2.5em; /* Tamaño de la fuente */
-  font-weight: bold; /* Texto en negrita */
-  color: #333; /* Color del texto */
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
 }
 body .story-section {
   padding: 20px;
@@ -29,30 +32,30 @@ body .story-section {
 }
 body .card {
   display: flex;
-  flex-direction: column; /* Asegura que el contenido se alinee verticalmente */
-  height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+  flex-direction: column;
+  height: 100%;
 }
 body .card .card-img-top {
-  width: 100%; /* Ajusta el ancho de la imagen al contenedor de la tarjeta */
-  height: 350px; /* Altura fija para la imagen */
-  object-fit: cover; /* Cubre el área de la tarjeta sin distorsionar la imagen */
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
 }
 body .card .card-body {
-  flex: 1; /* Hace que el cuerpo de la tarjeta se expanda para llenar el espacio restante */
+  flex: 1;
 }
 body .card .card-text {
   text-align: justify;
 }
 body #carouselExampleFade img {
-  max-height: 650px; /* Ajusta esta altura según tus necesidades */
-  border-radius: 15px; /* Puedes ajustar este valor para más o menos redondez */
+  max-height: 650px;
+  border-radius: 15px;
 }
 
 .character-avatar {
   width: 100%;
   height: auto;
-  border-radius: 5%; /* Hace las imágenes circulares, como avatares */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el cursor */
+  border-radius: 5%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .character-container {
@@ -136,6 +139,10 @@ body.comunidad {
   background-color: #0056b3;
 }
 
+.titulo-unirse {
+  text-align: center;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -188,9 +195,9 @@ footer .iconos-redes .social-icon:hover {
   padding: 15px; /* Espacio entre las imágenes */
 }
 .gallery-item img {
-  width: 120%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-  height: auto; /* Mantiene la proporción */
-  max-width: 600px; /* Ajusta este valor según el tamaño deseado */
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: 250px; /* Ajusta el tamaño para que las imágenes sean más grandes */
+  object-fit: cover; /* Ajusta la imagen para llenar el contenedor sin deformarla */
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -382,6 +389,10 @@ header img {
   text-align: justify;
   margin-top: 1rem; /* Espacio encima del texto */
   margin-bottom: 1rem; /* Espacio debajo del texto */
+}
+
+.cajas-secretos {
+  text-align: justify;
 }
 
 .gameplay-video {

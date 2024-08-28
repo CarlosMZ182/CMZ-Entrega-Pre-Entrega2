@@ -4,9 +4,9 @@
   padding: 15px; /* Espacio entre las imágenes */
 
   img {
-    width: 120%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    height: auto; /* Mantiene la proporción */
-    max-width: 600px; /* Ajusta este valor según el tamaño deseado */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 250px; /* Ajusta el tamaño para que las imágenes sean más grandes */
+    object-fit: cover; /* Ajusta la imagen para llenar el contenedor sin deformarla */
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 

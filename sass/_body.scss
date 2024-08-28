@@ -1,33 +1,64 @@
+// Uso de variables
+$background-color: whitesmoke;
+$text-color: #333;
+$font-family-base: Arial, sans-serif;
+$font-family-secondary: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+$card-img-height: 350px;
+$card-border-radius: 15px;
+$avatar-border-radius: 5%;
+$box-shadow-intense: 0 6px 12px rgba(0, 0, 0, 0.3);
+$carousel-img-max-height: 650px;
+
+// uso de Mixins
+@mixin center-text {
+  text-align: center;
+}
+
+@mixin card-image {
+  width: 100%;
+  height: $card-img-height;
+  object-fit: cover;
+}
+
+@mixin card-body {
+  flex: 1;
+}
+
+@mixin card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 body {
-  background-color: whitesmoke; /* Color de fondo del cuerpo */
-  font-family: Arial, sans-serif;
+  background-color: $background-color;
+  font-family: $font-family-base;
   margin: 0;
   padding: 0;
 
   main {
     padding: 20px;
-    background-color: whitesmoke; /* Color de fondo de la sección principal */
+    background-color: $background-color;
   }
 
   h1,
   h2,
   p,
   a {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: $font-family-secondary;
   }
 
   .main-seccion {
     padding: 20px;
-    text-align: center; /* Puedes mantener este estilo si deseas centrar el texto */
+    @include center-text;
   }
 
   .titulo-principal {
-    text-align: center; /* Centra el texto horizontalmente */
-    margin: 20px 0; /* Margen superior e inferior */
-    font-size: 2.5em; /* Tamaño de la fuente */
-    font-weight: bold; /* Texto en negrita */
-    color: #333; /* Color del texto */
+    @include center-text;
+    margin: 20px 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: $text-color;
   }
 
   .story-section {
@@ -36,18 +67,14 @@ body {
   }
 
   .card {
-    display: flex;
-    flex-direction: column; /* Asegura que el contenido se alinee verticalmente */
-    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+    @include card;
 
     .card-img-top {
-      width: 100%; /* Ajusta el ancho de la imagen al contenedor de la tarjeta */
-      height: 350px; /* Altura fija para la imagen */
-      object-fit: cover; /* Cubre el área de la tarjeta sin distorsionar la imagen */
+      @include card-image;
     }
 
     .card-body {
-      flex: 1; /* Hace que el cuerpo de la tarjeta se expanda para llenar el espacio restante */
+      @include card-body;
     }
 
     .card-text {
@@ -56,23 +83,25 @@ body {
   }
 
   #carouselExampleFade img {
-    max-height: 650px; /* Ajusta esta altura según tus necesidades */
-    border-radius: 15px; /* Puedes ajustar este valor para más o menos redondez */
+    max-height: $carousel-img-max-height;
+    border-radius: $card-border-radius;
   }
 }
 
 .character-avatar {
   width: 100%;
   height: auto;
-  border-radius: 5%; /* Hace las imágenes circulares, como avatares */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa al pasar el cursor */
+  border-radius: $avatar-border-radius;
+  box-shadow: $box-shadow-intense;
 }
+
 .character-container {
-  text-align: center;
+  @include center-text;
   margin-bottom: 20px;
 }
+
 .character-name {
   margin-top: 10px;
   font-size: 1.2em;
-  color: #333;
+  color: $text-color;
 }
